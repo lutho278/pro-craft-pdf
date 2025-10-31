@@ -103,12 +103,38 @@ const Builder = () => {
   const handleExportPDF = async () => {
     setIsExporting(true);
     try {
-      // TODO: Implement PDF export
+      const element = document.getElementById('resume-content');
+      if (!element) {
+        throw new Error('Resume content not found');
+      }
+
+      // @ts-ignore - html2pdf is loaded via script
+      const html2pdf = (await import('html2pdf.js')).default;
+      
+      const opt = {
+        margin: 0,
+        filename: `${resumeData.personalDetails.fullName.replace(/\s+/g, '_')}_Resume.pdf`,
+        image: { type: 'jpeg' as const, quality: 0.98 },
+        html2canvas: { 
+          scale: 2,
+          useCORS: true,
+          letterRendering: true
+        },
+        jsPDF: { 
+          unit: 'mm', 
+          format: 'a4', 
+          orientation: 'portrait' as const
+        }
+      };
+
+      await html2pdf().set(opt).from(element).save();
+      
       toast({
-        title: "Export Coming Soon",
-        description: "The PDF export feature will be available once the backend is set up.",
+        title: "Success!",
+        description: "Your resume has been downloaded as PDF.",
       });
     } catch (error) {
+      console.error('PDF export error:', error);
       toast({
         title: "Error",
         description: "Failed to export PDF. Please try again.",
