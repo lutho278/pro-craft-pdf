@@ -23,18 +23,61 @@ const Builder = () => {
 
   const [resumeData, setResumeData] = useState<ResumeData>({
     personalDetails: {
-      fullName: '',
-      email: '',
-      phone: '',
-      location: '',
-      linkedin: '',
-      website: ''
+      fullName: 'Sarah Johnson',
+      email: 'sarah.johnson@email.com',
+      phone: '+1 (555) 123-4567',
+      location: 'San Francisco, CA',
+      linkedin: 'linkedin.com/in/sarahjohnson',
+      website: 'sarahjohnson.dev'
     },
-    professionalSummary: '',
-    workExperience: [],
-    education: [],
-    skills: [],
-    certifications: [],
+    professionalSummary: 'Results-driven software engineer with 5+ years of experience building scalable web applications. Proven track record of leading cross-functional teams and delivering high-impact projects. Passionate about clean code, user experience, and continuous learning.',
+    workExperience: [
+      {
+        id: '1',
+        jobTitle: 'Senior Software Engineer',
+        company: 'Tech Solutions Inc.',
+        location: 'San Francisco, CA',
+        startDate: 'Jan 2021',
+        endDate: '',
+        current: true,
+        description: 'Led development of microservices architecture serving 1M+ users\nImplemented CI/CD pipeline reducing deployment time by 60%\nMentored team of 5 junior developers'
+      },
+      {
+        id: '2',
+        jobTitle: 'Software Engineer',
+        company: 'StartupXYZ',
+        location: 'Remote',
+        startDate: 'Jun 2019',
+        endDate: 'Dec 2020',
+        current: false,
+        description: 'Developed and maintained React-based customer portal\nOptimized database queries improving response time by 40%\nCollaborated with design team to implement responsive UI'
+      }
+    ],
+    education: [
+      {
+        id: '1',
+        degree: 'Bachelor of Science in Computer Science',
+        institution: 'University of California',
+        location: 'Berkeley, CA',
+        graduationDate: 'May 2019',
+        gpa: '3.8'
+      }
+    ],
+    skills: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'Python', 'AWS', 'Docker', 'PostgreSQL', 'Git', 'Agile/Scrum'],
+    certifications: [
+      {
+        id: '1',
+        name: 'AWS Certified Solutions Architect',
+        issuer: 'Amazon Web Services',
+        date: 'Mar 2023'
+      },
+      {
+        id: '2',
+        name: 'Professional Scrum Master I',
+        issuer: 'Scrum.org',
+        date: 'Jan 2022'
+      }
+    ],
     template: 'modern'
   });
 
