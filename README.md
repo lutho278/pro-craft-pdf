@@ -2,6 +2,8 @@
 
 ## Project info
 
+## Resume generator **URL**: https://resume-generator0.netlify.app/
+
 **URL**: https://lovable.dev/projects/e78ac95d-758d-4979-9d59-d92a8dfc70c4
 
 ## How can I edit this code?
@@ -59,15 +61,3 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e78ac95d-758d-4979-9d59-d92a8dfc70c4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
