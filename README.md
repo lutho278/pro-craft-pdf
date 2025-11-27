@@ -4,7 +4,7 @@
 
 ## Resume generator **URL**: https://resume-generator0.netlify.app/
 
-**URL**: https://lovable.dev/projects/e78ac95d-758d-4979-9d59-d92a8dfc70c4
+**URL**: [https://lovable.dev/projects/e78ac95d-758d-4979-9d59-d92a8dfc70c4](https://resume-generator0.netlify.app/)
 
 ## How can I edit this code?
 
